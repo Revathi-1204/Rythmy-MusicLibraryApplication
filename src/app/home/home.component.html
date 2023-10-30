@@ -1,0 +1,55 @@
+
+  <div *ngIf = "flag" >
+    <h2>Trending songs</h2>
+<div *ngFor="let song of songs" class="song-item">
+   <button class="song-button" (click) = "displaySong(song)">
+      <img src="{{ song.link }}" width="200" height="120" alt="Tamil">
+      <span class="song-name">{{ song.name }}</span>
+      <span class="movie-name">{{ song.movie }}</span>
+  </button>
+  </div>
+  <h2>Artists</h2>
+  <div class="button-container">
+    <ng-container *ngFor="let artist of artists">
+      <button class="song-button" (click) ="setSearchTermAndByArtist(artist.name)">
+        <img src="{{ artist.link }}" width="200" height="120" alt="Tamil">
+        <span class="song-name">{{ artist.name }}</span>
+       
+    </button>
+    </ng-container>
+  </div>
+  
+  <h2>Our music to your mood</h2>
+  <div class="button-container">
+    <ng-container *ngFor="let category of categories">
+      <button class="song-button" (click) = "setSearchTermAndByCategory(category.name)">
+        <img src="{{ category.link }}" width="200" height="120" alt="Tamil">
+        <span class="song-name">{{ category.name }}</span>
+       
+    </button>
+    </ng-container>
+  </div>
+</div>
+
+<div *ngIf="!flag">
+  <div class="search-results">
+    <ng-container *ngIf="searchResults === null; else resultsFound">
+      <h2>No songs found</h2>
+    </ng-container>
+    <ng-template #resultsFound>
+      <div *ngFor="let result of searchResults">
+        <button class="result-button" (click)="playSong(result)">
+          <img [src]="result.link" [alt]="result.songName" class="result-image">
+          <div class="result-details">
+            <div class="result-song">{{ result.songName }}</div>
+          </div>
+        </button>
+      </div>
+    </ng-template>
+  </div>
+</div>
+
+  
+
+
+  

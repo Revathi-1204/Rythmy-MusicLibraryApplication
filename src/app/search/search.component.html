@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="container">
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search...." [(ngModel)]="searchTerm">
+            <select id="searchCategory" [(ngModel)]="selectedCategory">
+                <option value="songName">Song Name</option>
+                <option value="artist">Artist</option>
+                <option value="movie">Movie</option>
+                <option value="language">Language</option>
+                <option value="category">Category</option>
+            </select>
+            <button id="searchButton" (click)="searchContent()">Search</button>
+        </div><br><br>
+        <div class="search-results">
+            <div *ngFor="let result of searchResults">
+                <ng-container *ngIf="searchResults === null; else resultsFound">
+                    <h2>No songs found</h2>
+                  </ng-container>
+                  <ng-template #resultsFound> 
+              <button class="result-button" (click) = "playSong(result)">
+                <img src="{{result.link}}" alt="{{result.songName}}" class="result-image">
+                <div class="result-details">
+                  <div class="result-song">{{result.songName}}</div>
+                  
+                </div>
+              </button>
+                  </ng-template>
+            </div>
+          </div>
+          
+<div *ngIf="flag">
+        <!-- Buttons with pictures and languages as titles -->
+        <h3>Languages</h3>
+        <div class="language-buttons">
+            <button class="language-button" (click) = "setSearchTermAndByLanguage('Tamil')">
+                <img src="https://th.bing.com/th/id/OIP.us7B0GvOzWkE7MwueDbToAHaEK?pid=ImgDet&rs=1" width="200" height="120" alt="Tamil">
+                <span class="language-name">Tamil</span>
+            </button>
+            <button class="language-button" (click) = "setSearchTermAndByLanguage('Telugu')">
+                <img src="https://th.bing.com/th/id/OIP.ajm0Ofr1uxpHmYxxBtRLRAHaHa?pid=ImgDet&rs=1" width="200" height="120" alt="Telugu">
+                <span class="language-name">Telugu</span>
+            </button>
+            <button class="language-button" (click) = "setSearchTermAndByLanguage('Hindi')">
+                <img src="https://th.bing.com/th/id/OIP.WY_LSa6GsLpuQFUeORVw7gHaHa?pid=ImgDet&rs=1" width="200" height="120" alt="Hindi">
+                <span class="language-name">Hindi</span>
+            </button>
+            <!-- Add more buttons as needed -->
+        </div>
+
+        <h3>Artists</h3>
+        <div class="language-buttons">
+            <button class="language-button" (click) = "setSearchTermAndByArtist('A R Rehman')">
+                <img src="https://th.bing.com/th/id/OIP.TRIkELzWjyaCYG0PwrQGOAHaJ4?pid=ImgDet&rs=1" width="200" height="120" alt="English">
+                <span class="language-name">A R Rehman</span>
+            </button>
+            <button class="language-button" (click) = "setSearchTermAndByArtist('DSP')">
+                <img src="https://th.bing.com/th/id/OIP.HSva0PRLH0FJzTm8UoT31gHaFj?pid=ImgDet&rs=1" width="200" height="120" alt="Telugu">
+                <span class="language-name">Devi Sri Prasad</span>
+            </button>
+            <button class="language-button" (click) = "setSearchTermAndByArtist('Anirudh')">
+                <img src="https://th.bing.com/th/id/OIP.MTjHfbPyDmtkulCsuRyzGwHaEg?pid=ImgDet&rs=1" width="200" height="120" alt="Hindi">
+                <span class="language-name">Anirudh</span>
+            </button>
+            <!-- Add more buttons as needed -->
+        </div>
+
+        <h3>Recent movies</h3>
+        <div class="language-buttons">
+            <button class="language-button" (click) = "setSearchTermAndByMovie('PS2')">
+                <img src="https://st1.bollywoodlife.com/wp-content/uploads/2022/10/Ponniyin-Selvan-box-office-collection-day-3.png?impolicy=Medium_Widthonly&w=1280&h=900" width="200" height="120" alt="English">
+                <span class="language-name">Ponniyin Selvan 2</span>
+            </button>
+            <button class="language-button" (click) = "setSearchTermAndByMovie('dasara')">
+                <img src="https://th.bing.com/th/id/OIP.ZlvaR9vDmjdymDdvxgmR0AHaJQ?pid=ImgDet&rs=1" width="200" height="120" alt="Telugu">
+                <span class="language-name">Dasara</span>
+            </button>
+            <button class="language-button" (click) = "setSearchTermAndByMovie('jawan')">
+                <img src="https://th.bing.com/th/id/OIP.lzZPxYUClCjN3Q-bCgIeowHaIj?pid=ImgDet&rs=1" width="200" height="120" alt="Hindi">
+                <span class="language-name">Jawan</span>
+            </button>
+            <!-- Add more buttons as needed -->
+        </div>
+
+        <div id="contentDisplay"></div>
+    </div>
+</div>
+</body>
+</html>

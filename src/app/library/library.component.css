@@ -1,0 +1,46 @@
+/* Style the result button container */
+.result-button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%; /* Adjust the width as needed */
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left;
+  }
+  
+  /* Style the result image */
+  .result-image {
+    max-width: 100px; /* Adjust the max-width as needed */
+    max-height: 100px; /* Adjust the max-height as needed */
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Style the result details container */
+  .result-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style the song name */
+  .result-song {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Style the artist name */
+  .result-artist {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Hover effect */
+  .result-button:hover {
+    background-color: #e0e0e0;
+  }
+    
+  

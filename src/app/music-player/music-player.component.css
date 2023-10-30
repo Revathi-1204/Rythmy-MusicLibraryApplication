@@ -1,0 +1,67 @@
+.music-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .song-name{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+  }
+  
+  .card {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .image-container img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .play-button {
+    background-color: transparent; /* Remove background color */
+    color: white;
+    padding: 0; /* Remove padding */
+    border: none; /* Remove border */
+    font-size: 0; /* Remove font size */
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .horizontal-line {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #0f0f0f;
+    margin: 4px auto;
+  }
+  
+  .options {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+  }
+  
+  .option {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px; /* Adjust padding for button size */
+    font-size: 16px;
+    cursor: pointer;
+    border: 0px solid white; /* Add a border for the button */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s;
+    display: inline-block; /* Display buttons side by side */
+    margin-right: 10px; /* Add spacing between buttons */
+  }
+  
+  .option:hover {
+    background-color: #333;
+  }
+  

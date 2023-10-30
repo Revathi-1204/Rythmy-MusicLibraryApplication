@@ -1,0 +1,85 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+/* Apply basic styling to the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header with the app logo and name */
+.app-header {
+    background: linear-gradient(90deg, #ff6600, #ff3333);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.app-logo img {
+    max-width: 60px;
+    max-height: 60px;
+    margin-right: 10px;
+}
+
+.app-name h1 {
+    font-size: 48px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* Style the navigation bar */
+.navbar {
+    background: linear-gradient(90deg, #ff6600, #ff3333);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.3s;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+.navbar a:hover {
+    color: #000000;
+}
+
+.navbar img {
+    max-width: 30px;
+    max-height: 30px;
+    margin-bottom: 5px;
+}
+/* styles.css or your component-specific CSS */
+/* styles.css or your component-specific CSS */
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 10px;
+  }
+  
+  .logout-button {
+    background-color: #000000; /* Red background color */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    margin-right: 20px; /* Add right margin for spacing */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  

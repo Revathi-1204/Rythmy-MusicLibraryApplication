@@ -1,0 +1,9 @@
+h1 {
+    font-size: 54px; /* Adjust the font size as needed */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #080320; /* Text color */
+    text-align: center; /* Text alignment (centered in this example) */
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 10px; /* Add space below the <h1> element */
+  }
+  

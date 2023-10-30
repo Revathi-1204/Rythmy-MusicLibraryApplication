@@ -1,0 +1,139 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+
+#searchButton {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #0b0909;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#searchButton:hover {
+    background-color: #353232;
+}
+
+.language-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.language-button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 300px; /* Adjust the width as needed */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.language-button img {
+    max-width: 30%;
+    margin-right: 10px;
+}
+
+.language-name {
+    color: white;
+    font-size: 20px;
+    flex-grow: 1;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.language-button:hover {
+    background-color: #333;
+}
+
+/* Style the select container */
+#searchCategory {
+    width: 200px; /* Set the width as desired */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  /* Style the select options */
+  #searchCategory option {
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  /* Style the select when it's hovered */
+  #searchCategory:hover {
+    border-color: #666;
+  }
+  
+  /* Style the select when it's focused */
+  #searchCategory:focus {
+    border-color: #00a0e4;
+    box-shadow: 0 0 5px rgba(0, 160, 228, 0.5);
+  }
+/* Style the result button container */
+.result-button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%; /* Adjust the width as needed */
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left;
+  }
+  
+  /* Style the result image */
+  .result-image {
+    max-width: 100px; /* Adjust the max-width as needed */
+    max-height: 100px; /* Adjust the max-height as needed */
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Style the result details container */
+  .result-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style the song name */
+  .result-song {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Style the artist name */
+  .result-artist {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Hover effect */
+  .result-button:hover {
+    background-color: #e0e0e0;
+  }
+    

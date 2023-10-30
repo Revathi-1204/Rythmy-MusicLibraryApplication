@@ -1,0 +1,19 @@
+
+<h2>Your Library</h2>
+
+  <div class="search-results">
+    <ng-container *ngIf="songs === null; else resultsFound">
+      <h2>No songs in Library</h2>
+    </ng-container>
+    <ng-template #resultsFound>
+      <div *ngFor="let result of songs">
+        <button class="result-button" (click)="playSong(result)">
+          <img [src]="result.link" [alt]="result.name" class="result-image">
+          <div class="result-details">
+            <div class="result-song">{{ result.name }}</div>
+          </div>
+        </button>
+      </div>
+    </ng-template>
+  </div>
+  

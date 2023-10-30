@@ -1,0 +1,37 @@
+
+<div class="music-player">
+    <div class="card">
+      <div class="image-container">
+        <img src="{{ song.link }}" alt="Album Art">
+      </div><br>
+      <div class = "song-name">{{song.name}}</div>
+      <!-- <button class="play-button" >
+        <img src="https://th.bing.com/th/id/R.17dea5ebc20f4fd10389b4f180ae9b3d?rik=e9t%2fhvOQADZM1g&riu=http%3a%2f%2fclipart-library.com%2fimages%2f8i65B8AXT.png&ehk=ruY7nFucsGPNXtLQ6BYoDblZX0Klw15spn25fXFppPs%3d&risl=&pid=ImgRaw&r=0" width = "50" height = "50">
+      </button><br><br> 
+    .play-button {
+    background-color: transparent; /* Remove background color */
+    color: white;
+    padding: 0; /* Remove padding */
+    border: none; /* Remove border */
+    font-size: 0; /* Remove font size */
+    cursor: pointer;
+    margin-top: 10px;
+  }
+    -->
+      <video controls name = "media">
+
+        <source src="https://ia801009.us.archive.org/8/items/EdSheeranPerfectOfficialMusicVideoListenVid.com/Ed_Sheeran_-_Perfect_Official_Music_Video%5BListenVid.com%5D.mp3" type="audio/mpeg">
+    
+    </video>
+      <div class="options">
+        
+        <hr class="horizontal-line">
+        <button class="option" (click) = "addSongToLibrary(song.name)">Add to library</button>
+      </div>
+      
+       
+       
+      </div>
+    </div>
+ 
+  
